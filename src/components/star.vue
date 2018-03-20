@@ -51,10 +51,9 @@
       starType() {
         return 'star-' + this.size + ' ' + this.space + '-space';
       },
-//      score: {
-//        return this.score>this.total?this.total:this.score;
-//      },
       itemClasses() {
+        // 防止score大于total超出范围
+        this.score = (this.score>this.total)?this.total:this.score;
         let result = [];
         let score = Math.floor(this.score * 2) / 2;
         let hasDecimal = (score % 1 !== 0)
