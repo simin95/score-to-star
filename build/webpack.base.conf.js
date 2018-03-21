@@ -13,11 +13,12 @@ function resolve (dir) {
 module.exports = {
   context: path.resolve(__dirname, '../'),
   entry: {
-    app: './src/main.js'
+    app: './src/index.js'
   },
+//  entry: './src/index.js',
   output: {
     path: config.build.assetsRoot,
-    filename: '[name].js',
+    filename: 'vue-score-to-star.js',
     publicPath: process.env.NODE_ENV === 'production'
       ? config.build.assetsPublicPath
       : config.dev.assetsPublicPath
