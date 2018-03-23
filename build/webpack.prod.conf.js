@@ -24,8 +24,13 @@ const webpackConfig = merge(baseWebpackConfig, {
   devtool: config.build.productionSourceMap ? config.build.devtool : false,
   output: {
     path: config.build.assetsRoot,
+<<<<<<< HEAD
     filename: utils.assetsPath('js/[name].[chunkhash].js'),
 //    filename: 'vue-score-to-star.js',
+=======
+//    filename: utils.assetsPath('js/[name].[chunkhash].js'),
+    filename: utils.assetsPath('vue-score-to-star.js'),
+>>>>>>> d032a6d4bb9e6b4347e4f90a6fecce47fba40f65
     chunkFilename: utils.assetsPath('js/[id].[chunkhash].js')
   },
   plugins: [

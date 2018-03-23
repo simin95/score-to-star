@@ -17,6 +17,7 @@ module.exports = {
     // 'vue-score-to-star': './src/lib/index.js'
 	'app': './src/main.js'
   },
+//  entry: './src/index.js',
   output: {
     path: config.build.assetsRoot,
     filename: 'vue-score-to-star.js',
