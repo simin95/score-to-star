@@ -1,0 +1,10 @@
+
+20180323
+插件编写完成，使用无问题
+
+在用webpack打包时出了问题，通过修改以下配置来只打包出star组件而不是整个工程：
+	webpack.base文件中：entry，output
+但打包后的文件使用时会报'templete or render function not defined'的错误，或许以后可以解决
+
+目前已上传npm, 可通过'npm install vue-score-to-star --save' 来安装
+		

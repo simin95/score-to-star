@@ -40,7 +40,7 @@
 
 <script>
 
-  import star from './components/star.vue'
+  import star from './lib/star.vue'
 export default {
   name: 'App',
   components: {

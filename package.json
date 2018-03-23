@@ -1,9 +1,10 @@
 {
   "name": "vue-score-to-star",
-  "version": "1.0.0",
+  "version": "1.0.7",
   "description": "a vue component",
   "author": "Chen Simin <375021462@qq.com>",
-  "private": true,
+  "private": false,
+  "main": "dist/static/js/vue-score-to-star.js",
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",

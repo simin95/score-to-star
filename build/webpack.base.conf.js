@@ -13,11 +13,15 @@ function resolve (dir) {
 module.exports = {
   context: path.resolve(__dirname, '../'),
   entry: {
-    app: './src/main.js'
+    // 只打包组件选这项
+    // 'vue-score-to-star': './src/lib/index.js'
+	'app': './src/main.js'
   },
   output: {
     path: config.build.assetsRoot,
-    filename: '[name].js',
+    filename: 'vue-score-to-star.js',
+    library: 'star',
+    libraryTarget: 'umd',
     publicPath: process.env.NODE_ENV === 'production'
       ? config.build.assetsPublicPath
       : config.dev.assetsPublicPath

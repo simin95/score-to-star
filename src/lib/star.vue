@@ -19,7 +19,7 @@
   const CLS_OFF = 'off';
 
   export default {
-    name: 'star',
+    name: 'scoreToStar',
     components: {},
     props: {
       total: {
